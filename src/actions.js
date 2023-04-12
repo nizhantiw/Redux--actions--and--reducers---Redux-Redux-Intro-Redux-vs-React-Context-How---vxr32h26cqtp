@@ -1,11 +1,17 @@
+export const LOGIN_USER = 'LOGIN_USER';
+export const LOGOUT_USER = 'LOGOUT_USER';
 
-export const repairAdded = (var1,va2) => {
+export const loginUser = (username) => {
   return {
-    type: "actionType1",
+    type: LOGIN_USER,
     payload: {
-      var1,
-      var2
+      username
     }
   }
 }
 
+export const logoutUser = () => {
+  return {
+    type: LOGOUT_USER
+  }
+}
